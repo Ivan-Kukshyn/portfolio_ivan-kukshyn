@@ -1,0 +1,132 @@
+@import url('colors.css');
+@import url('text.css');
+@import url('responsive.css');
+@import url('navbar.css');
+
+/* BUTTON */
+.btn-cv {
+    width: 140px;
+    height: 40px;
+    background: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--background-dark);
+    border-color: var(--background-dark);
+    color: var(--text-white);
+    border: 2px solid #000000;
+    cursor: pointer;
+    background-origin: border-box;
+    background-clip: padding-box;
+    transition: transform 0.3s, background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.btn-cv:hover {
+    background-color: var(--background-white);
+    border-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.btn-cv-toggleMenu {
+    width: 140px;
+    height: 40px;
+    background: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--background-white);
+    border-color: var(--background-white);
+    color: var(--text-dark);
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-origin: border-box;
+    background-clip: padding-box;
+    transition: transform 0.3s, background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.nav-contact {
+    display: flex;
+    gap: 20px; 
+    font-size: 25px;
+    margin-left: 1em;
+}
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+/* WELCOME social links */
+.social-links a {
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--text-dark);
+}
+
+.social-links i {
+    font-size: 30px;
+    transform: scale(1);
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    transition: background-color 0.1s;
+}
+
+.circle:hover {
+    background-color: var(--text-dark);
+    color: var(--text-white);
+}
+
+/* CONTACT social links */
+.contact-social-links {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.contact-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.1s;
+}
+
+.contact-circle:hover {
+    color: var(--text-white);
+    background-color: var(--background-dark);
+}
+
+.contact-social-links a {
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--text-dark);
+}
+
+/* COPY function */
+.copy i {
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.copy i:hover {
+    color: var(--icon-active);
+}

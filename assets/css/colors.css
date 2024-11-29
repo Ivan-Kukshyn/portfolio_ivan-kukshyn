@@ -1,0 +1,17 @@
+:root {
+  /* LIGHT THEME */
+  --text-dark: #000000;
+  --background-white: #ffffff;
+  --background-gray: #ececec;
+
+  /* DARK THEME */
+  --text-white: #FFFFFF;
+  --background-dark: #000000;
+
+  /* OTHER */
+  --icon-gray: #dadada;
+  --color-pink: #f64c74;
+  --color-violet: #553d67;
+  --color-lightblue: #2f2fa2; 
+  --color-lightviolet: #99738e;
+}

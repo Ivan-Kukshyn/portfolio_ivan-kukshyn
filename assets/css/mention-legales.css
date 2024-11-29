@@ -1,0 +1,30 @@
+@import url('colors.css');
+@import url('text.css');
+@import url('components.css');
+@import url('responsive.css');
+@import url('navbar.css');
+
+body {
+    background-color: var(--background-gray);
+}
+
+.mention-legale-section {
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: var(--background-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mention-legale-section a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.mention-legale-name {
+    text-align: center;
+}
+
+.mention-legale-section h2{
+    line-height: 2;
+}
