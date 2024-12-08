@@ -1,17 +1,14 @@
 :root {
   /* LIGHT THEME */
-  --text-dark: #000000;
-  --background-white: #ffffff;
-  --background-gray: #ececec;
+  --bg-light: #FFFFFF;
+  --second-bg-light: #eceff3;
 
   /* DARK THEME */
-  --text-white: #FFFFFF;
-  --background-dark: #000000;
+  --bg-dark: #000000;
+  --main-dark: #1c1c1c;
+  --second-bg-dark: #141414;
 
-  /* OTHER */
-  --icon-gray: #dadada;
-  --color-pink: #f64c74;
-  --color-violet: #553d67;
-  --color-lightblue: #2f2fa2; 
-  --color-lightviolet: #99738e;
+  /* TEXT */
+  --text-light: #ffffff;
+  --text-dark: #000000;
 }

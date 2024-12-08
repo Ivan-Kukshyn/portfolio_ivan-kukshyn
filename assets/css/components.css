@@ -1,132 +1,45 @@
 @import url('colors.css');
-@import url('text.css');
-@import url('responsive.css');
-@import url('navbar.css');
 
 /* BUTTON */
-.btn-cv {
-    width: 140px;
-    height: 40px;
-    background: #000000;
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2.5rem;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    border: 2px solid var(--text-dark);
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
     font-weight: 600;
-    font-size: 16px;
-    background-color: var(--background-dark);
-    border-color: var(--background-dark);
-    color: var(--text-white);
-    border: 2px solid #000000;
     cursor: pointer;
-    background-origin: border-box;
-    background-clip: padding-box;
-    transition: transform 0.3s, background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50px;
+    transition: .3s ease;
 }
 
-.btn-cv:hover {
-    background-color: var(--background-white);
-    border-color: var(--background-dark);
+.btn:hover {
+    background: #333333;
+    border: 2px solid #333333;
+    color: var(--text-light);
+}
+
+/* BUTTON Download CV */
+.btn-download-cv {
+    display: inline-block;
+    padding: 0.75rem 2.5rem;
+    background: var(--bg-white);
     color: var(--text-dark);
-}
-
-.btn-cv-toggleMenu {
-    width: 140px;
-    height: 40px;
-    background: #ffffff;
+    border: 2px solid var(--text-dark);
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
     font-weight: 600;
-    font-size: 16px;
-    background-color: var(--background-white);
-    border-color: var(--background-white);
-    color: var(--text-dark);
-    border: 2px solid #ffffff;
     cursor: pointer;
-    background-origin: border-box;
-    background-clip: padding-box;
-    transition: transform 0.3s, background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50px;
+    transition: .3s ease;
 }
 
-.nav-contact {
-    display: flex;
-    gap: 20px; 
-    font-size: 25px;
-    margin-left: 1em;
-}
-.social-links {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
-}
-
-/* WELCOME social links */
-.social-links a {
-    text-decoration: none;
-    font-size: 30px;
-    color: var(--text-dark);
-}
-
-.social-links i {
-    font-size: 30px;
-    transform: scale(1);
-}
-
-.circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    transition: background-color 0.1s;
-}
-
-.circle:hover {
-    background-color: var(--text-dark);
-    color: var(--text-white);
-}
-
-/* CONTACT social links */
-.contact-social-links {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
-    gap: 15px;
-}
-
-.contact-circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.1s;
-}
-
-.contact-circle:hover {
-    color: var(--text-white);
-    background-color: var(--background-dark);
-}
-
-.contact-social-links a {
-    text-decoration: none;
-    font-size: 30px;
-    color: var(--text-dark);
-}
-
-/* COPY function */
-.copy i {
-    transform: scale(1);
-    cursor: pointer;
-}
-
-.copy i:hover {
-    color: var(--icon-active);
+.btn-download-cv:hover {
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px rgba(0, 0, 0, 0.133),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.067);
 }
