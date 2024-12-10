@@ -1,11 +1,38 @@
 // toogle icon navbar
-let menuIcon = document.querySelector('#menu-icon')
-let navbar = document.querySelector('.navbar')
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x')
-    navbar.classList.toggle('active')
-}
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
+// theme toggle
+let themeToggle = document.querySelector('#theme-toggle');
+let body = document.querySelector('body');
+
+// Save user preference in localStorage
+themeToggle.addEventListener('click', () => {
+    const isDarkMode = body.classList.toggle('dark-theme');
+
+    // Toggle icon between moon and sun
+    themeToggle.classList.toggle('fa-moon', !isDarkMode);
+    themeToggle.classList.toggle('fa-sun', isDarkMode);
+
+    // Save user preference
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+});
+
+// Load user preference on page load
+window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+        themeToggle.classList.add('fa-sun');
+        themeToggle.classList.remove('fa-moon');
+    }
+});
 
 // scroll section active link
 let sections = document.querySelectorAll('section');
@@ -31,8 +58,8 @@ window.onscroll = () => {
 
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    menuIcon.classList.remove('bx-x')
-    navbar.classList.remove('active')
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 };
 
 // scroll reveal
@@ -45,5 +72,5 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'})
-ScrollReveal().reveal('.home-content p, .education-container, .about-content', { origin: 'right'})
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
+ScrollReveal().reveal('.home-content p, .education-container, .about-content', { origin: 'right'});

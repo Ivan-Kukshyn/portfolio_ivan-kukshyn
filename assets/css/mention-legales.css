@@ -2,21 +2,28 @@
 @import url('colors.css');
 
 body {
-    background-color: var(--second-bg-light);
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
 }
 
-.termsOfUse h1{
+.termsOfUse h1 {
     font-size: 4rem;
     text-align: center;
     margin: 1rem 0 1rem;
 }
 
-.termsOfUse h2{
+.termsOfUse h2 {
     font-size: 2.6rem;
     margin: 4rem 0 1rem;
 }
 
-.termsOfUse p{
+.termsOfUse p {
+    font-size: 2rem;
+}
+
+.termsOfUse a {
+    color: var(--main-color);
+    text-decoration: underline;
     font-size: 2rem;
 }
 

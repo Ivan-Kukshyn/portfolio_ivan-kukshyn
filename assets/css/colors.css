@@ -1,14 +1,15 @@
 :root {
-  /* LIGHT THEME */
-  --bg-light: #FFFFFF;
-  --second-bg-light: #eceff3;
+  --bg-color: #FFFFFF;
+  --second-bg-color: #DADADA;
+  --text-color: #000000;
+  --main-color: #000000;
+  --btn-color: #FFFFFF;
+}
 
-  /* DARK THEME */
-  --bg-dark: #000000;
-  --main-dark: #1c1c1c;
-  --second-bg-dark: #141414;
-
-  /* TEXT */
-  --text-light: #ffffff;
-  --text-dark: #000000;
+.dark-theme {
+  --bg-color: #1F242D;
+  --second-bg-color: #323946;
+  --text-color: #FFFFFF;
+  --main-color: #0EF;
+  --btn-color: #000000;
 }
