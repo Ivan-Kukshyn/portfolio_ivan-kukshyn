@@ -18,6 +18,10 @@ html {
     overflow-x: hidden;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -521,10 +525,14 @@ footer {
         display: block;
     }
 
+    .nav-container {
+        gap: 3rem;
+    }
+
     .navbar a {
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 4rem 0;
     }
 
     .home {
