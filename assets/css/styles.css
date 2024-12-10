@@ -64,6 +64,7 @@ section {
     display: flex;
     gap: 3rem;
 }
+
 .navbar .nav-link {
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -390,6 +391,7 @@ section {
     background-color: var(--second-bg-color);
     color: var(--text-color);
 }
+
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -469,10 +471,10 @@ footer {
     color: var(--btn-color)
 }
 
-/* =========================================== DARK THEME =========================================== */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
+        width: 100%;
     }
 }
 
@@ -487,10 +489,6 @@ footer {
 
     .skills {
         padding-bottom: 7rem;
-    }
-
-    .project {
-        margin-bottom: 7rem;
     }
 
     .contact {
