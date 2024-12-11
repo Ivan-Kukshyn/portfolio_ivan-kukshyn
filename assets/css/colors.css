@@ -2,14 +2,18 @@
   --bg-color: #FFFFFF;
   --second-bg-color: #DADADA;
   --text-color: #000000;
+  --text-layer: #FFFFFF;
   --main-color: #000000;
   --btn-color: #FFFFFF;
+  --layer-color: #000000;
 }
 
 .dark-theme {
   --bg-color: #1F242D;
   --second-bg-color: #323946;
   --text-color: #FFFFFF;
+  --text-layer: #FFFFFF;
   --main-color: #0EF;
   --btn-color: #000000;
+  --layer-color: #000000;
 }

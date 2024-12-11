@@ -1,34 +1,35 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-// Connect PHPMailer
-require 'vendor/autoload.php';
+// Load Composer's autoloader
+require __DIR__ . '/vendor/autoload.php';
 
-    // Get data from the form
-    $name = htmlspecialchars($_POST["name"]);
-    $email = htmlspecialchars($_POST["email"]);
-    $phone = htmlspecialchars($_POST["phone"]);
-    $subject = htmlspecialchars($_POST["subject"]);
-    $message = htmlspecialchars($_POST["message"]);
+// Get data from the form
+$name = htmlspecialchars($_POST["name"]);
+$email = htmlspecialchars($_POST["email"]);
+$phone = htmlspecialchars($_POST["phone"]);
+$subject = htmlspecialchars($_POST["subject"]);
+$message = htmlspecialchars($_POST["message"]);
+
+// Create PHPMailer instance
+$mail = new PHPMailer(true);
 
     // Server settings
-    $mail = new PHPMailer(true);
-
-    // Настройки сервера
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com'; 
+    $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'ivan.kukshyn@gmail.com';
-    $mail->Password = 'oost adaq yyip iqaf';
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  
-    $mail->Port = 587; 
+    $mail->Password = 'ueol vzlu wqso bvht';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = 587;
 
-    // Sender setting
+    // Sender and recipient settings
     $mail->setFrom($email, $name);
     $mail->addAddress('ivan.kukshyn@gmail.com', 'Ivan Kukshyn');
 
-    // Content of the letter
-    $mail->isHTML(true);                              
+    // Email content
+    $mail->isHTML(true);
     $mail->Subject = "Message from Portfolio: $subject";
     $mail->Body = "
         <h2>New message from Portfolio</h2>
@@ -38,7 +39,7 @@ require 'vendor/autoload.php';
         <p><b>Message:</b><br>$message</p>
     ";
 
-    // Sending a letter
+    // Send email
     $mail->send();
-    header("Location: sent.html");
+    header("Location: index.html");
 ?>
